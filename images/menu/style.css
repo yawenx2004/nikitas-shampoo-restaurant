@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+/* for header */
+#header-nav {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+    border: 0;
+    padding: 24px;
+}
+
+#logo-img {
+    background: url("../images/logo.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-right: 24px;
+}
+
+.navbar-brand {
+    padding-top: 24px;
+}
+
+.navbar-brand h1 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    font-size: 0.75em;
+    margin-top: 0;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+#nav-list {
+    margin-top: 24px;
+}
+
+#nav-list a {
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: white;
+    border-radius: 16px;
+}
+
+#nav-list li.active a {
+    background: white;
+}
+
+#phone a {
+    font-size: 1.25em;
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div {
+    text-align: right;
+    padding-right: 16px;
+}
+/*
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid red;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+*/
+/* for main content: home */
+#phone-xs a {
+    font-size: 4em;
+}
+
+/* for main content: menu */
+.category-tile {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    color: transparent;
+}
+
+.category-tile:hover {
+    opacity: 0.75;
+}
+
+.category-tile:hover span {
+    color: black;
+}
+
+#menu-categories-title + div {
+    margin-bottom: 48px;
+}
+
+/* for main content: single menu category*/
+.menu-item-tile {
+    margin-bottom: 24px;
+}
+
+.menu-item-photo {
+    margin-right: 0;
+}
+
+.menu-item-tile .menu-item-price {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.menu-item-photo {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 24px;
+    width: 150px;
+    height: 150px;
+    max-width: 250px;
+}
+/*
+menu.-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: white;
+    text-align: center;
+}
+*/
+/* for footer */
+.panel-footer {
+    margin-top: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-color: #333333;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+}
+
+.panel-footer p {
+    margin-bottom: 24px;
+}
+
+.panel-footer div.row {
+    margin-bottom: 48px;
+}
+
+#hours > span, #address > span {
+    font-size: 1.5em;
+}
+
+
+.panel-footer a:hover {
+    text-decoration: none;
+}
+
+/* for responsive design */
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background: url("../images/logo-med.png") no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo-img {
+        background: url("../images/logo-med.png") no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    #logo-img {
+        background: url("../images/logo-med.png") no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+        margin-right: 16px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 3vw;
+        margin-top: 0;
+    }
+
+    .navbar-brand p {
+        font-size: .75em;
+        margin-top: 0x;
+    }
+
+    #collapsable.nav a {
+        font-size: 1.25em;
+    }
+
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 8px;
+    }
+
+    .menu-item-photo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .menu-item-tile hr {
+        width: 25%;
+        margin: auto;
+    }
+
+    .menu-item-description {
+        text-align: center;
+    }
+
+    .panel-footer section {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .panel-footer section hr {
+        width: 25%;
+        margin: auto;
+    }
+
+    .col-xxxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15p;
+        float: left;
+        width: 100%;
+    }
+}
